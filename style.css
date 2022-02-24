@@ -3,6 +3,7 @@
      color: white;
      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
      max-width: 1200px;
+     min-width: 580px;
      padding: 10px;
      margin: 0 auto;
  }
@@ -14,11 +15,15 @@
  }
  .title2{
      line-height: 10px;
+     font-size: 45px;
+     margin-left: 25px;
+   
  }
 
 .title li{
     display: inline-block;
     text-decoration: none;
+    text-align: center;
     flex-wrap: wrap;
     margin-right: 20px;
     color: white;
@@ -44,7 +49,7 @@ main{
 }
 h3{
  font-size: 40px;
- line-height: 40px;
+ line-height: 10px;
 }
 h3 span{
     color:rebeccapurple;
@@ -59,9 +64,9 @@ p{
     margin: 90px 20px 90px 0px;
 }
 input{
-    width: 130px;
-    padding: 10px;
-    margin-left: 10px;
+    width: 350px;
+    padding: 25px;
+    margin: 20px;
     border-radius: 10px;
 }
 img{
@@ -69,18 +74,19 @@ img{
     right: 290px;
     margin-top: 60px;
 }
-@media (max-width:768px){
+form{
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:1150px){
     header{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        width: 100%;
-        background-color: rgb(52, 67, 80);
     }
     .title2{
         font-size: 50px;
-        color: aquamarine;
     }
     ul{
         display: flex;
@@ -90,5 +96,29 @@ img{
         font-size: 30px;
         margin-bottom: 20px;
     }
+   main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        width: 450px;
+    }
+    article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        width: 620px;
+    }
+    img{
+        width: 400px;
+    }        
 }
 
