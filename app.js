@@ -1,7 +1,7 @@
 
-let btnClicado = document.querySelector('.btn')
+let btnClicado = document.getElementsByClassName('.btn')
 let imgAposOClick = document.querySelector('.imgClicada')
 
 btnClicado = addEventListener('click', () =>{
-    imgAposOClick.atyle.width = '400px'    
+   console.log(btnClicado) 
 });
